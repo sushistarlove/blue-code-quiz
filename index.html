@@ -9,20 +9,21 @@
     <h1 id="challenge">Coding Quiz Challenge</h1>
     <h2 id="instruction">Try to answer the following coding-related questions within the time limit. Beware that incorrect answers subtract time from the clock. Good luck!</h2>
     </headers>
-
-   <div id="container">
-     <div id="startbtn"><button id="btn1">Start Quiz</button></div>
-     <div id="quiz">
-         <div id="question"></div>
-         <div id="choices"></div>
-             <div class="choice" id="A"
-             onclick="checkAnswer('A')"></div>
-             <div class="choice" id="B"
-             onclick="checkAnswer('B')"></div>
-             <div class="choice" id="C"
-             onclick="checkAnswer('C')"></div>
-             <div class="choice" id="D"
-             onclick="checkAnswer('D')"></div>
+    <div id="container">
+        <div id="start">Start Quiz</div>
+        <div id="quiz" style="display: none;">
+            <div id="question"></div>
+            <div id="choices">
+                <div class="choice" id="A"
+                    onclick="checkAnswer('A')"></div>
+                    <div class="choice" id="B"
+                    onclick="checkAnswer('B')"></div>
+                    <div class="choice" id="C"
+                    onclick="checkAnswer('C')"></div>
+                    <div class="choice" id="D"
+                    onclick="checkAnswer('D')"></div> 
+                </div>
+            </div>
         </div>
 
     <script src="assets/script.js"></script>

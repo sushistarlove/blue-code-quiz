@@ -1,12 +1,11 @@
 //Selecting All Elements
-const start = document.getElementID("start");
-const quiz = document.getElementID("quiz");
-const question = document.getElementID("question");
-const choiceA = document.getElementID("A");
-const choiceB = document.getElementID("B");
-const choiceC = document.getElementID("C");
-const choiceD = document.getElementID("D");
-const progress = document.getElementID("progress");
+var start = document.getElementById("start");       
+var quiz = document.getElementById("quiz");
+var question = document.getElementById("question");
+var choiceA = document.getElementById("A");
+var choiceB = document.getElementById("B");
+var choiceC = document.getElementById("C");
+var choiceD = document.getElementById("D");
 
 //Make Questions
 var questions = [
@@ -25,7 +24,7 @@ var questions = [
         choiceD : "Wrong",
         correct : "B",
         },{
-            question : "Question 3?",
+            question : "What JavaScript Element Represents Either True or False Values?",
             ChoiceA : "Wrong",
             ChoiceB : "Wrong",
             ChoiceC : "Wrong",
@@ -74,7 +73,7 @@ var questions = [
                         choiceD : "Correct",
                         correct : "D",
                       },{
-                        question : "What Does CSS Stand For?",
+                        question : "Question 10?",
                         ChoiceA : "Wrong",
                         ChoiceB : "Wrong",
                         ChoiceC : "Correct",
@@ -82,3 +81,28 @@ var questions = [
                         correct : "C",
                       }
 ];
+
+//make Variables
+var lastQuestion = questions.length - 1;
+var runningQuestion = 0;
+
+//Render Question
+function renderQuestion(){
+    var q = questions[runningQuestion];
+
+    question.innerHTML = "<p>"+ q.question +"</p>";
+    choiceA.innerHTML = q.choiceA;
+    choiceB.innerHTML = q.choiceB;
+    choiceC.innerHTML = q.choiceC;
+    choiceD.innerHTML = q.choiceD;
+}
+
+start.addEventListener("click",startQuiz);
+
+function startQuiz(){
+    start.style.display = "none";
+    renderQuestion();
+    quiz.style.display = "block";
+}
+
+
