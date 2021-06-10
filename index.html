@@ -1,14 +1,30 @@
 <!DOCTYPE html>
 <head>
+    <meta charset="UTF-8">
+    <title>Coding Quiz Challenge</title>
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
+    <headers>
     <h1 id="challenge">Coding Quiz Challenge</h1>
     <h2 id="instruction">Try to answer the following coding-related questions within the time limit. Beware that incorrect answers subtract time from the clock. Good luck!</h2>
-    <script src="assets/script.js"></script>
-    <br>
+    </headers>
 
-    <button id="btn1">Start Quiz</button>
-    
+   <div id="container">
+     <div id="startbtn"><button id="btn1">Start Quiz</button></div>
+     <div id="quiz">
+         <div id="question"></div>
+         <div id="choices"></div>
+             <div class="choice" id="A"
+             onclick="checkAnswer('A')"></div>
+             <div class="choice" id="B"
+             onclick="checkAnswer('B')"></div>
+             <div class="choice" id="C"
+             onclick="checkAnswer('C')"></div>
+             <div class="choice" id="D"
+             onclick="checkAnswer('D')"></div>
+        </div>
+
+    <script src="assets/script.js"></script>
 </body>
 </html>

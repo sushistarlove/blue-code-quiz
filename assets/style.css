@@ -12,17 +12,20 @@ color: aqua;
 text-shadow: 1px 1px black;
 }
 
+#startbtn {
+display: flex;
+justify-content: center;
+}
 
 #btn1 {
-    text-align: center;
-    color: aqua;
-    background-color: black;
-    height: 40px;
-    width: 80px;
-    
+text-align: center;
+color: aqua;
+background-color: black;
+height: 40px;
+width: 80px;
 }
 
 #btn1:hover {
-    color: black;
-    background-color: aqua;
+color: black;
+background-color: aqua;
 }
