@@ -11,11 +11,12 @@ var choiceD = document.getElementById("D");
 var questions = [
     {
         question : "What Does CSS Stand For?",
-        ChoiceA : "Wrong",
-        ChoiceB : "Wrong",
-        ChoiceC : "Wrong",
-        choiceD : "Correct",
+        ChoiceA : "Corporate Styling Standard",
+        ChoiceB : "Colorful Sizing Sheets",
+        ChoiceC : "Collided Style Sheets",
+        choiceD : "Cascading Style Sheetz",
         correct : "D",
+        
     },{
         question : "Which Heading Tag Will Make The Text Appear The Largest?",
         ChoiceA : "Wrong",
@@ -105,4 +106,8 @@ function startQuiz(){
     quiz.style.display = "block";
 }
 
+function checkAnswer (answer) {
+    if( answer == questions[runningQuestion].correct){
 
+    }
+}
