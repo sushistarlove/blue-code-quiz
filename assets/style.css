@@ -14,7 +14,7 @@ color: black;
 text-shadow: 1px 1px red;
 }
 
-#container{
+#container {
     margin : 20px auto;
     background-color: white;
     height: 300px;
@@ -22,6 +22,17 @@ text-shadow: 1px 1px red;
     border-radius: 5px;
     box-shadow: 0px 5px 15px 0px;
     position: relative;
+}
+
+#timer {
+    margin : 20px auto;
+    background-color: white;
+    height: 28px;
+    width : 55px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px 0px;
+    position: relative;
+    text-align: center;
 }
 
 #start {
@@ -77,6 +88,38 @@ text-shadow: 1px 1px red;
 .choice:hover {
     border : 2px solid grey;
     font-weight: bold
+}
+
+#correct {
+    text-align: center;
+    font-size: 30px;
+    color: greenyellow;
+    text-shadow: 1px 1px 1px rgb(26, 26, 26);
+    display: none;
+}
+
+#incorrect {
+    text-align: center;
+    font-size: 30px;
+    color: rgb(245, 4, 4);
+    text-shadow: 1px 1px 1px rgb(26, 26, 26);
+    display: none;
+}
+
+#highscores {
+    font-size: 50px;
+    color: blue;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+}
+
+
+#scoresstyling {
+    margin: auto;
+    height: 700px;
+    width: 250px;
+    color: blue;
+    border: 2px solid black;
 }
 
 

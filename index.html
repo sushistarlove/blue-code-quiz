@@ -1,31 +1,40 @@
 <!DOCTYPE html>
+
 <head>
     <meta charset="UTF-8">
     <title>Coding Quiz Challenge</title>
     <link rel="stylesheet" href="assets/style.css">
 </head>
+
 <body>
     <headers>
-    <h1 id="challenge">Coding Quiz Challenge</h1>
-    <h2 id="instruction">Try to answer the following coding-related questions within the time limit. Beware that incorrect answers subtract time from the clock. Good luck!</h2>
+        <h1 id="challenge">Coding Quiz Challenge</h1>
+        <h2 id="instruction">Try to answer the following coding-related questions within the time limit. Beware that
+            incorrect answers subtract time from the clock. Good luck!</h2>
     </headers>
     <div id="container">
         <div id="start">Start Quiz</div>
         <div id="quiz" style="display: none;">
             <div id="question"></div>
             <div id="choices">
-                <div class="choice" id="A"
-                    onclick="checkAnswer('A')"></div>
-                    <div class="choice" id="B"
-                    onclick="checkAnswer('B')"></div>
-                    <div class="choice" id="C"
-                    onclick="checkAnswer('C')"></div>
-                    <div class="choice" id="D"
-                    onclick="checkAnswer('D')"></div> 
-                </div>
+                <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+                <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+                <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+                <div class="choice" id="D" onclick="checkAnswer('D')"></div>
             </div>
         </div>
+    </div>
+
+    <div id="container2">
+        <h1 id="correct">Correct!</h1>
+        <h2 id="incorrect">Incorrect.</h2>
+    </div>
+
+    <div id="timer">
+        <h3>80</h3>
+    </div>
 
     <script src="assets/script.js"></script>
 </body>
+
 </html>
